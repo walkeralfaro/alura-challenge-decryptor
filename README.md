@@ -1,17 +1,17 @@
 # Challenge 01 - Desencriptador 📝
 
 Reto del Bootcamp Alura ONE - G6 2024
-Desarrollado por **Walker Alfaro Trelles - Lima/Perú**
+- Desarrollado por **Walker Alfaro Trelles - Lima/Perú**
 
 ## Reto
 
 Las "llaves" de encriptación que utilizaremos son las siguientes:
 
-`La letra "e" es convertida para "enter"`
-`La letra "i" es convertida para "imes"`
-`La letra "a" es convertida para "ai"`
-`La letra "o" es convertida para "ober"`
-`La letra "u" es convertida para "ufat"`
+- `La letra "e" es convertida para "enter"`
+- `La letra "i" es convertida para "imes"`
+- `La letra "a" es convertida para "ai"`
+- `La letra "o" es convertida para "ober"`
+- `La letra "u" es convertida para "ufat"`
 
 **Requisitos:**
 
@@ -21,8 +21,8 @@ Las "llaves" de encriptación que utilizaremos son las siguientes:
 
 Por ejemplo:
 
-`"gato" => "gaitober"`
-`gaitober" => "gato"`
+- `"gato" => "gaitober"`
+- `gaitober" => "gato"`
 
 - La página debe tener campos para
   inserción del texto que será encriptado o desencriptado, y el usuario debe poder escoger entre as dos opciones.
