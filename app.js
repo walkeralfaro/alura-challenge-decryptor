@@ -5,17 +5,29 @@ document.addEventListener('DOMContentLoaded', function() {
   const formInput = document.querySelector('#form_input');
   const btnEncrypt = document.querySelector('#btn_encrypt');
   const btnDecrypt = document.querySelector('#btn_decrypt');
-  const btnCopyText= document.querySelector('#copy_text');
+  const btnCopyText= document.querySelector('#btn_copy');
+  const outputText = document.querySelector('#output_text');
 
   // events
-  textInput.addEventListener('input', validar);
+  textInput.addEventListener('input', validate);
   btnEncrypt.addEventListener('click', encrypting);
   btnDecrypt.addEventListener('click', decrypting);
 
 
 
-  function validar() {
-    console.log('validando');
+  function validate(e) {
+    const textToValidate = e.target.value;
+    const pattern = /^[a-z\s]+$/;
+    const patternValidation = pattern.test(textToValidate);
+
+    if( (textToValidate.trim() == '') || !patternValidation ) {
+      // no habilitar botones de encriptación ni encriptar nada
+      console.log('no se puede encriptar');
+    } else {
+      // habilitar botones de encriptación y la opción de encriptar
+      console.log('si se puede encriptar');
+    }
+
   }
 
   function encrypting(text) {
@@ -42,9 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
             array[index] = letter;
         }
     });
-
     const encryptedText = textArray.join('')
-
     return encryptedText;
   }
 
@@ -54,7 +64,6 @@ document.addEventListener('DOMContentLoaded', function() {
                           .replace(/ai/g, 'a')
                           .replace(/ober/g, 'o')
                           .replace(/ufat/g, 'u');
-
     return decryptedText;
   }
 
