@@ -4,14 +4,15 @@ document.addEventListener('DOMContentLoaded', function() {
   const textInput = document.querySelector('#text_input');
   const btnEncrypt = document.querySelector('#btn_encrypt');
   const btnDecrypt = document.querySelector('#btn_decrypt');
-  const btnCopyText= document.querySelector('#btn_copy');
-  const outputText = document.querySelector('#output_text');
+  const initialMessage = document.querySelector('#initial_message');
+  const outputMessage = document.querySelector('#output_message');
   
   // events
   btnEncrypt.addEventListener('click', encrypting);
   btnDecrypt.addEventListener('click', decrypting);
-  btnCopyText.addEventListener('click', copyText);
   
+  // initial conditions
+  createInitialMessages();
 
   function validate() {
     const text = textInput.value;
@@ -52,66 +53,80 @@ document.addEventListener('DOMContentLoaded', function() {
           }
       });
       const encryptedText = textArray.join('');
-  
-      // show encrypted text
-      showText(encryptedText);
-  
-      // clean input text of textarea
-      cleanInputText();
+      onceEncrypted(encryptedText);
     }
 
     return;
-
-
   }
 
   function decrypting() {
-
     const validationResult = validate();
     if(validationResult) {
-      const decryptedText = validationResult.replace(/enter/g, 'e')
-                            .replace(/imes/g, 'i')
-                            .replace(/ai/g, 'a')
-                            .replace(/ober/g, 'o')
-                            .replace(/ufat/g, 'u');
+      const decryptedText = validationResult.replace(/enter/g, 'e').replace(/imes/g, 'i').replace(/ai/g, 'a').replace(/ober/g, 'o').replace(/ufat/g, 'u');
       // show decrypted text
-      showText(decryptedText);
-  
-      // clean input text of textarea
-      cleanInputText();
+      onceEncrypted(decryptedText);
     }
 
     return;
   }
 
-  function showText(ciphertext) {
-    outputText.textContent = ciphertext;
-  }
+  function onceEncrypted(ciphertext) {
 
-  function cleanInputText() {
+    removeInitialMessages(initialMessage);
+    removeInitialMessages(outputMessage);
+    createOutputElements(ciphertext);
+
     textInput.value = '';
   }
 
-  async function copyText() {
+  async function copyText(outputText) {
     try {
       await navigator.clipboard.writeText(outputText.textContent);
     } catch (error) {
-      prompt('hubo un error al copiar al portapapeles');
+      prompt('hubo un error al copiar al portapapeles: ', error);
     }
   }
 
-  function showElement() {
-    //TODO: mostrar elementos HTML
+  function removeInitialMessages(messageElements) {
+    while(messageElements.firstChild) {
+      messageElements.removeChild(messageElements.firstChild);
+    }
   }
-
-  function hideElement() {
-    //TODO: ocultar elementos HTML
-  }
-
   
+  function createInitialMessages(){
+    const firstNotice = document.createElement('P');
+    const secondNotice = document.createElement('P');
 
+    firstNotice.textContent = 'Ningún mensaje fue encontrado';
+    firstNotice.setAttribute('id', 'first_notice');
+    firstNotice.classList.add('firstNotice');
 
+    secondNotice.textContent = 'Ingresa el texto que desees encriptar o desencriptar.';
+    secondNotice.setAttribute('id', 'second_notice');
+    secondNotice.classList.add('secondNotice');
+    
+    initialMessage.appendChild(firstNotice);
+    initialMessage.appendChild(secondNotice);
+  }
 
+  function createOutputElements(outputElements) {
 
+    const outputText = document.createElement('P');
+    const btnCopyText= document.createElement('BUTTON');
+
+    btnCopyText.setAttribute('id', 'btn_copy');
+    btnCopyText.classList.add('btnCopyText');
+    btnCopyText.textContent = 'copiar';
+
+    outputText.setAttribute('id', 'output_text');
+    outputText.classList.add('outputText');
+    outputText.textContent = outputElements;
+
+    outputMessage.appendChild(outputText);
+    outputMessage.appendChild(btnCopyText);
+
+    btnCopyText.addEventListener('click', copyText(outputText));
+
+  }
 
 });

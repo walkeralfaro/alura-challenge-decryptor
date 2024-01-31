@@ -7,6 +7,9 @@
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="styles.css">
   <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -34,18 +37,14 @@
   </form>
 
   <div>
-    <div>
-      <img src="assets/person.svg" alt="person_search">
-      <p>Ningún mensaje fue encontrado</p>
-      <p>Ingresa el texto que desees encriptar o desencriptar.</p>
-
-      <p id="output_text"></p>
-      <button id="btn_copy">Copiar</button>
+    <div id="initial_message">
+      <img src="assets/person.svg" alt="person_search" style="display: none;">
     </div>
+
+    <div id="output_message"></div>
   </div>
 
   <script src="app.js"></script>
-
 
 </body>
 </html>

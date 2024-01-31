@@ -18,3 +18,9 @@
   --GRAY_GRAY_500: #343A40;
 }
 
+body{
+  font-family: 'Inter', sans-serif;
+  background-color: var(--LIGHT_BLUE_LIGHT_BLUE_100);
+
+  margin: 0 16px; 
+}
