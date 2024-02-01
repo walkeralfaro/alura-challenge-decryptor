@@ -1,7 +1,7 @@
-@import url('/styles/variables.css');
-@import url('/styles/message.css');
-@import url('/styles/button.css');
-@import url('/styles/form.css');
+@import url('./styles/variables.css');
+@import url('./styles/message.css');
+@import url('./styles/button.css');
+@import url('./styles/form.css');
 
 body{
   font-family: 'Inter', sans-serif;
