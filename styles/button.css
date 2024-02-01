@@ -1,8 +1,15 @@
+.btn_container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
 
 .btn{
   width: 100%;
   padding: 24px;
-  /* margin: 12px 0; */
+  
+  font-size: 16px;
 
   border: 1px solid var(--DARK_BLUE_DARK_BLUE_300);
   border-radius: 24px;
@@ -11,6 +18,7 @@
   color: var(--DARK_BLUE_DARK_BLUE_300);
 
   cursor: pointer;
+  line-height: 1.2;
 
   /* styles encrypting button */
   &.btn_encrypt{

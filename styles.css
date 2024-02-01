@@ -1,10 +1,11 @@
 @import url('/styles/variables.css');
-@import url('/styles/button.css');
 @import url('/styles/message.css');
+@import url('/styles/button.css');
+@import url('/styles/form.css');
 
 body{
   font-family: 'Inter', sans-serif;
   background-color: var(--LIGHT_BLUE_LIGHT_BLUE_100);
 
-  margin: 0 16px; 
+  margin: 24px 16px 40px; 
 }

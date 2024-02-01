@@ -9,7 +9,7 @@
   <title>Document</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -20,17 +20,17 @@
     </h1>
   </header>
   
-  <form id="form_text">
+  <form class="form_container" id="form_text">
     <div>
-      <textarea id="text_input" name="text_input" placeholder="Ingrese el texto aquí"></textarea>
+      <textarea class="textInput" id="text_input" spellcheck="false" placeholder="Ingrese el texto aquí"></textarea>
     </div>
 
-    <div>
+    <div class="announcement">
       <img src="assets/exclamation.svg" alt="alert_read">
       <p>Solo letras minúsculas y sin acentos</p>
     </div>
 
-    <div>
+    <div class="btn_container">
       <button class="btn btn_encrypt" id="btn_encrypt" type="button">Encriptar</button>
       <button class="btn btn_decrypt" id="btn_decrypt" type="button">Desencriptar</button>
     </div>

@@ -10,10 +10,17 @@ document.addEventListener('DOMContentLoaded', function() {
   // events
   btnEncrypt.addEventListener('click', encrypting);
   btnDecrypt.addEventListener('click', decrypting);
+
+  // textarea auto fit content
+  textInput.addEventListener('input', function(){
+    this.style.height = "auto";
+    this.style.height = this.scrollHeight + "px";
+  })
   
   // initial conditions
   createInitialMessages();
 
+  // functions
   function validate() {
     const text = textInput.value;
     const pattern = /^[a-z\s]+$/;
@@ -94,19 +101,19 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   
   function createInitialMessages(){
-    const firstNotice = document.createElement('P');
-    const secondNotice = document.createElement('P');
+    const firstMessage = document.createElement('P');
+    const secondMessage = document.createElement('P');
 
-    firstNotice.textContent = 'Ningún mensaje fue encontrado';
-    firstNotice.setAttribute('id', 'first_notice');
-    firstNotice.classList.add('firstNotice');
+    firstMessage.textContent = 'Ningún mensaje fue encontrado';
+    firstMessage.setAttribute('id', 'first_notice');
+    firstMessage.classList.add('firstMessage');
 
-    secondNotice.textContent = 'Ingresa el texto que desees encriptar o desencriptar.';
-    secondNotice.setAttribute('id', 'second_notice');
-    secondNotice.classList.add('secondNotice');
+    secondMessage.textContent = 'Ingresa el texto que desees encriptar o desencriptar.';
+    secondMessage.setAttribute('id', 'second_notice');
+    secondMessage.classList.add('secondMessage');
     
-    initialMessage.appendChild(firstNotice);
-    initialMessage.appendChild(secondNotice);
+    initialMessage.appendChild(firstMessage);
+    initialMessage.appendChild(secondMessage);
   }
 
   function createOutputElements(outputElements) {
