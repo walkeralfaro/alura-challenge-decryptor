@@ -115,8 +115,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const btnCopyText= document.createElement('BUTTON');
 
     btnCopyText.setAttribute('id', 'btn_copy');
-    btnCopyText.classList.add('btnCopyText');
-    btnCopyText.textContent = 'copiar';
+    btnCopyText.setAttribute('class', 'btn btnCopyText');
+    btnCopyText.textContent = 'Copiar';
 
     outputText.setAttribute('id', 'output_text');
     outputText.classList.add('outputText');

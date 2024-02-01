@@ -1,0 +1,20 @@
+
+.btn{
+  width: 100%;
+  padding: 24px;
+  /* margin: 12px 0; */
+
+  border: 1px solid var(--DARK_BLUE_DARK_BLUE_300);
+  border-radius: 24px;
+
+  background-color: transparent;
+  color: var(--DARK_BLUE_DARK_BLUE_300);
+
+  cursor: pointer;
+
+  /* styles encrypting button */
+  &.btn_encrypt{
+    color: var(--WHITE);
+    background-color: var(--DARK_BLUE_DARK_BLUE_300);
+  }
+}

@@ -1,0 +1,9 @@
+.message {
+  background-color: var(--WHITE);
+  border-radius: 24px;
+  padding: 32px;
+  margin-top: 64px;
+  font-size: 24px;
+  color: var(--GRAY_GRAY_400);
+  box-shadow: 0px 24px 32px 0px rgba(0,0,0,0.28);
+}
