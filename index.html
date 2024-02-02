@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="./reset.css">
   <link rel="stylesheet" href="./styles.css">
   <title>Walker Alfaro - Encriptador Alura ONE</title>
@@ -14,35 +15,56 @@
 
 <body>
 
-  <header>
-    <h1>
-      <img src="assets/alura_logo.svg" alt="alura_logo">
-    </h1>
-  </header>
+  <div class="container">
+    
+    <div class="principal">
+      
+      <header>
+        <h1>
+          <img src="assets/alura_logo.svg" alt="alura_logo">
+        </h1>
+      </header>
+      
+      <div class="principal_input">
+        
+        <div>
+          <textarea class="textInput" id="text_input" spellcheck="false" placeholder="Ingrese el texto aquí"></textarea>
+        </div>
+
+        <div>
+          <div class="announcement">
+            <img src="assets/exclamation.svg" alt="alert_read">
+            <p>Solo letras minúsculas y sin acentos</p>
+          </div>
+      
+          <div class="btn_container">
+            <a class="btn btn_encrypt" id="btn_encrypt" type="button" href="#output_area">Encriptar</a>
+            <button class="btn btn_decrypt" id="btn_decrypt" type="button">Desencriptar</button>
+          </div>
+
+        </div>
+    
+
+      </div> <!--principal_input-->
+      
+    </div> <!--principal-->
+
   
-  <form class="form_container" id="form_text">
-    <div>
-      <textarea class="textInput" id="text_input" spellcheck="false" placeholder="Ingrese el texto aquí"></textarea>
-    </div>
+    <div class="message" id="output_area">
+      <div id="initial_message">
+        <img src="assets/person.svg" alt="person_search" style="display: none;">
+      </div>
+  
+      <div id="output_message"></div>
+    </div> <!--message-->
 
-    <div class="announcement">
-      <img src="assets/exclamation.svg" alt="alert_read">
-      <p>Solo letras minúsculas y sin acentos</p>
-    </div>
+    <footer>
+      <p class="footer_paragraph">
+        made with <img src="./assets/heart.svg" alt=""> by <a href="https://walkeralfaro.com" target="_blank">walker alfaro</a>
+      </p>
+    </footer>
+  </div> <!--container-->
 
-    <div class="btn_container">
-      <button class="btn btn_encrypt" id="btn_encrypt" type="button">Encriptar</button>
-      <button class="btn btn_decrypt" id="btn_decrypt" type="button">Desencriptar</button>
-    </div>
-  </form>
-
-  <div class="message">
-    <div id="initial_message">
-      <img src="assets/person.svg" alt="person_search" style="display: none;">
-    </div>
-
-    <div id="output_message"></div>
-  </div>
 
   <script src="./app.js"></script>
 </body>

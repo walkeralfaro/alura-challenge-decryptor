@@ -12,10 +12,20 @@ document.addEventListener('DOMContentLoaded', function() {
   btnDecrypt.addEventListener('click', decrypting);
 
   // textarea auto fit content
-  textInput.addEventListener('input', function(){
-    this.style.height = "auto";
-    this.style.height = this.scrollHeight + "px";
-  })
+  textInput.addEventListener('input', textareaAutoincrement);
+  // textInput.addEventListener('blur', function(){
+  //   this.style.height = "initial";
+  // })
+
+  function textareaAutoincrement() {
+    textInput.style.height = "auto";
+    textInput.style.height = this.scrollHeight + "px";
+  }
+
+  function initialSizeTextarea() {
+    textInput.style.height = "initial";
+
+  }
   
   // initial conditions
   createInitialMessages();
@@ -82,8 +92,9 @@ document.addEventListener('DOMContentLoaded', function() {
     removeInitialMessages(initialMessage);
     removeInitialMessages(outputMessage);
     createOutputElements(ciphertext);
-
+    console.log('hola');
     textInput.value = '';
+    initialSizeTextarea()
   }
 
   async function copyText(outputText) {
