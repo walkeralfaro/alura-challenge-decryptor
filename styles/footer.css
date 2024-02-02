@@ -1,18 +1,13 @@
 footer{
   display: flex;
   justify-content: center;
-  margin-top: 64px;
   padding-bottom: 24px;
-  /* margin-bottom: 24px; */
 }
 
 .footer_paragraph{
   color: var(--DARK_BLUE_DARK_BLUE_300);
   display: flex;
   gap: 4px;
-
-  /* position: absolute;
-  top: 97%; */
 
   a {
     color: var(--DARK_BLUE_DARK_BLUE_300);

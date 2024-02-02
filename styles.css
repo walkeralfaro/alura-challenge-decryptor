@@ -1,7 +1,7 @@
 @import url('./styles/variables.css');
 @import url('./styles/message.css');
 @import url('./styles/button.css');
-@import url('./styles/form.css');
+@import url('./styles/input.css');
 @import url('./styles/footer.css');
 
 body{
@@ -15,18 +15,22 @@ body{
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 64px;
 
+  .principal {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    .principal_input {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+
+      .principal_input_text{
+        flex: 1;
+        margin-top: 56px;
+      }
+    }
+  }
 }
-
-
-
-.principal {
-
-
-}
-
-.principal_input {
-
-}
-
