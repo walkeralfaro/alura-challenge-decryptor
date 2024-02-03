@@ -53,7 +53,7 @@ Iniciar con la esturctura HTML según la totalidad de elementos que posee el wir
 
 Por eso se recomienda hacer el wireframe básico del diseño para reconocer qué elementos se tienen y como se pueden agrupar para planificar los estilos, ya que debe ser responsive, agrupar los elementos en grupos grid o flexbox es clave.
 
-
+![structure](https://raw.githubusercontent.com/walkeralfaro/alura-challenge-decryptor/main/screenshots/structure.webp)
 
 ![desktop](https://raw.githubusercontent.com/walkeralfaro/alura-challenge-decryptor/main/screenshots/desktop.webp)
 
