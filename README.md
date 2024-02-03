@@ -1,7 +1,7 @@
 # Challenge 01 - Desencriptador 📝
 
 Reto del Bootcamp Alura ONE - G6 2024
-- Desarrollado por **Walker Alfaro Trelles - Lima/Perú**
+- Desarrollado por **[Walker Alfaro Trelles](http://walkeralfaro.com) - Lima/Perú**
 
 ## Reto
 
@@ -35,5 +35,15 @@ Por ejemplo:
 ## Solución
 
 ### Diseño
-Con respecto al diseño, he decidido optar por seguir el lineamiento subido a Figma, con el fin de practicar que el diseño haya sido proporcionado por otra área.
+Con respecto al diseño, he decidido optar por seguir el lineamiento subido a Figma en lugar de diseñar algo propio, con el fin de simular cumplir las necesidades de una hipotética área de UX/UI.
+
+### Mobile First
+Se hizo el diseño completamente ***responsivo***, siguiendo los requirimientos señalados en Figma de distribución espacial de elementos, tamaños, colores, fuentes y proporciones.
+
+Este enfoque planifica el desarrollo desde las dimensiones móviles, en este proyecto se tuvieron tres tamaños de pantalla:
+- small screen: 375x933
+- tablet screen: 768x1174
+- desktop screen: 1440x1024
+
+
 
