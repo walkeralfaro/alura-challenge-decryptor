@@ -86,9 +86,13 @@ document.addEventListener('DOMContentLoaded', function() {
     removeInitialMessages(initialMessage);
     removeInitialMessages(outputMessage);
     createOutputElements(ciphertext);
-    console.log('hola');
     textInput.value = '';
     initialSizeTextarea()
+    deleteInitialMessage();
+  }
+
+  function deleteInitialMessage() {
+    initialMessage.style.display = 'none';
   }
 
   async function copyText(outputText) {
