@@ -87,12 +87,17 @@ document.addEventListener('DOMContentLoaded', function() {
     removeInitialMessages(outputMessage);
     createOutputElements(ciphertext);
     textInput.value = '';
-    initialSizeTextarea()
+    initialSizeTextarea();
     deleteInitialMessage();
+    showOutputMessage();
   }
 
   function deleteInitialMessage() {
     initialMessage.style.display = 'none';
+  }
+
+  function showOutputMessage() {
+    outputMessage.style.display = 'flex';
   }
 
   async function copyText(outputText) {

@@ -8,7 +8,7 @@
 
   #initial_message {
     .imagen_message{
-      display: none;
+      display: none; /* initially this element is not displayed, later with JS it is assigned block */
     }
   
     .firstMessage {
@@ -27,7 +27,7 @@
 
   #output_message{
     height: 100%;
-    display: flex;
+    display: none; /* initially this element is not displayed, later with JS it is assigned flex */
     flex-direction: column;
     justify-content: space-between;
 
