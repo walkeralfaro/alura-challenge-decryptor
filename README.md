@@ -37,13 +37,24 @@ Por ejemplo:
 ### Diseño
 Con respecto al diseño, he decidido optar por seguir el lineamiento subido a Figma en lugar de diseñar algo propio, con el fin de simular cumplir las necesidades de una hipotética área de UX/UI.
 
-### Mobile First
+#### Mobile First
 Se hizo el diseño completamente ***responsivo***, siguiendo los requirimientos señalados en Figma de distribución espacial de elementos, tamaños, colores, fuentes y proporciones.
 
 Este enfoque planifica el desarrollo desde las dimensiones móviles, en este proyecto se tuvieron tres tamaños de pantalla:
+
 - small screen: 375x933
 - tablet screen: 768x1174
 - desktop screen: 1440x1024
 
+### Desarrollo
+
+#### Estructura HTML
+Iniciar con la esturctura HTML según la totalidad de elementos que posee el wireframe, considerando su utilidad se definen las títulos (h1, h2, h3, etc.), parrafos, inputs, botones, anchors, etc.
+
+Por eso se recomienda hacer el wireframe básico del diseño para reconocer qué elementos se tienen y como se pueden agrupar para planificar los estilos, ya que debe ser responsive, agrupar los elementos en grupos grid o flexbox es clave.
 
 
+
+![desktop](https://raw.githubusercontent.com/walkeralfaro/alura-challenge-decryptor/main/screenshots/desktop.webp)
+
+![mobile](https://raw.githubusercontent.com/walkeralfaro/alura-challenge-decryptor/main/screenshots/mobile.webp)
