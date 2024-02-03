@@ -32,7 +32,7 @@ Por ejemplo:
 
 - Un botón que copie el texto encriptado/desencriptado para la sección de transferencia, o sea que tenga la misma funcionalidad del `ctrl+C` o de la opción "copiar" del menú de las aplicaciones.
 
-## Solución
+## Solución 🚀
 
 ### Diseño
 Con respecto al diseño, he decidido optar por seguir el lineamiento subido a Figma en lugar de diseñar algo propio, con el fin de simular cumplir las necesidades de una hipotética área de UX/UI.

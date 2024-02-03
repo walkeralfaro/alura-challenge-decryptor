@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const btnDecrypt = document.querySelector('#btn_decrypt');
   const initialMessage = document.querySelector('#initial_message');
   const outputMessage = document.querySelector('#output_message');
+  const outputArea = document.querySelector('#output_area');
   
   // events
   btnEncrypt.addEventListener('click', encrypting);
@@ -82,7 +83,6 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   function onceEncrypted(ciphertext) {
-
     removeInitialMessages(initialMessage);
     removeInitialMessages(outputMessage);
     createOutputElements(ciphertext);
@@ -90,6 +90,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initialSizeTextarea();
     deleteInitialMessage();
     showOutputMessage();
+    scrollOutputMessage();
   }
 
   function deleteInitialMessage() {
@@ -148,6 +149,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     btnCopyText.addEventListener('click', copyText(outputText));
 
+  }
+
+  function scrollOutputMessage() {
+    outputArea.scrollIntoView({behavior: "smooth"});
   }
 
 });
