@@ -35,5 +35,5 @@ Por ejemplo:
 ## Solución
 
 ### Diseño
-Con respecto al diseño, he decidido optar por seguir el lineamiento existente en reto subido en Figma
+Con respecto al diseño, he decidido optar por seguir el lineamiento subido a Figma, con el fin de practicar que el diseño haya sido proporcionado por otra área.
 
