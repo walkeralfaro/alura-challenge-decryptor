@@ -1,3 +1,4 @@
+@import url('./styles/reset.css');
 @import url('./styles/variables.css');
 @import url('./styles/message.css');
 @import url('./styles/button.css');
@@ -14,13 +15,23 @@ body{
 .container {
   height: 100%;
   display: flex;
+  justify-content: center;
+}
+
+.main_container {
+  width: 100%;
+  max-width: 1440px;
+
+  display: flex;
   flex-direction: column;
   gap: 64px;
 
   .principal {
-    flex: 1;
+    flex: 1; 
+
     display: flex;
     flex-direction: column;
+    gap: 64px;
 
     .principal_input {
       height: 100%;
@@ -29,8 +40,37 @@ body{
 
       .principal_input_text{
         flex: 1;
-        margin-top: 56px;
       }
     }
   }
 }
+
+@media screen and (min-width: 768px) {
+  body{
+    padding: 74px 40px 0 40px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+
+  body{
+    padding: 40px;
+    padding-bottom: 0;
+  }
+
+  .main_container{
+    gap: 0;
+
+    .principal {
+      flex-direction: row;
+      gap: 80px;
+      margin-bottom: 64px;
+
+      .principal_input{
+        flex: 1;
+        padding: 128px 0 32px 140px; 
+      }
+    }
+  }
+}
+

@@ -10,13 +10,12 @@ document.addEventListener('DOMContentLoaded', function() {
   // events
   btnEncrypt.addEventListener('click', encrypting);
   btnDecrypt.addEventListener('click', decrypting);
-
-  // textarea auto fit content
   textInput.addEventListener('input', textareaAutoincrement);
-  // textInput.addEventListener('blur', function(){
-  //   this.style.height = "initial";
-  // })
 
+  // initial conditions
+  createInitialMessages();
+  
+  // functions
   function textareaAutoincrement() {
     textInput.style.height = "auto";
     textInput.style.height = this.scrollHeight + "px";
@@ -24,15 +23,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
   function initialSizeTextarea() {
     textInput.style.height = "initial";
-
   }
-  
-  // initial conditions
-  createInitialMessages();
 
-  // functions
   function validate() {
-    const text = textInput.value;
+    const text = textInput.value.toLowerCase();
     const pattern = /^[a-z\s]+$/;
     const patternValidation = pattern.test(text);
     

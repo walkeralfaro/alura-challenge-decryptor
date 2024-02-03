@@ -1,9 +1,8 @@
 .btn_container{
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(332px, 1fr));
 }
-
 
 .btn{
   width: 100%;
@@ -26,4 +25,12 @@
     color: var(--WHITE);
     background-color: var(--DARK_BLUE_DARK_BLUE_300);
   }
+}
+
+@media screen and (min-width:1440px) {
+
+  .btn_decrypt{
+    background-color: var(--GRAY_GRAY_BTN_DECRYPT);
+  }
+  
 }

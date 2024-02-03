@@ -1,7 +1,4 @@
-
-
 textarea{
-
   color: var(--DARK_BLUE_DARK_BLUE_300);
   background-color: transparent;
   font-size: 32px;
@@ -20,7 +17,6 @@ textarea{
   &::placeholder{
     color: var(--DARK_BLUE_DARK_BLUE_300);
   }
-  
 }
 
 .announcement{
