@@ -20,17 +20,31 @@
   cursor: pointer;
   line-height: 1.2;
 
-  /* styles encrypting button */
-  &.btn_encrypt{
+  &:hover{
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.28);
+  }
+
+  &:active{
     color: var(--WHITE);
     background-color: var(--DARK_BLUE_DARK_BLUE_300);
   }
 }
 
-@media screen and (min-width:1440px) {
+/* styles encrypting button */
+.btn_encrypt{
+  color: var(--WHITE);
+  background-color: var(--DARK_BLUE_DARK_BLUE_300);
 
+  &:active{
+    color: var(--DARK_BLUE_DARK_BLUE_300);
+    background-color: var(--GRAY_GRAY_BTN_DECRYPT);
+  }
+}
+
+/* media queries */
+
+@media screen and (min-width:1440px) { /* desktop size */
   .btn_decrypt{
     background-color: var(--GRAY_GRAY_BTN_DECRYPT);
   }
-  
 }

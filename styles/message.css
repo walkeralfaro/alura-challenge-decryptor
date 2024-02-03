@@ -43,8 +43,9 @@
   display: none;
 }
 
-@media screen and (min-width: 1440px) {
+/* media queries */
 
+@media screen and (min-width: 1440px) { /* desktop size */
   .message{
     width: 400px;
 
