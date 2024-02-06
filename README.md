@@ -51,7 +51,7 @@ Este enfoque planifica el desarrollo desde las dimensiones móviles, en este pro
 #### Estructura HTML
 Iniciar con la esturctura HTML según la totalidad de elementos que posee el wireframe, considerando su utilidad se definen las títulos (h1, h2, h3, etc.), parrafos, inputs, botones, anchors, etc.
 
-Por eso se recomienda hacer el wireframe básico del diseño para reconocer qué elementos se tienen y como se pueden agrupar para planificar los estilos, ya que debe ser responsive, agrupar los elementos en grupos grid o flexbox es clave.
+Por eso se recomienda hacer el wireframe básico del diseño para reconocer qué elementos se tienen y como se pueden agrupar para planificar los estilos, ya que debe ser responsive, agrupar los elementos en grupos *grid* o *flexbox* es clave.
 
 ![structure](https://raw.githubusercontent.com/walkeralfaro/alura-challenge-decryptor/main/screenshots/structure.webp)
 
@@ -155,7 +155,7 @@ async function copyText(outputText) {
 
 - Como se mencionó en la sección de **Diseño**, esta se optó por ser *responsive* y empezar el desarrollo teniendo en cuenta el *mobile first*.
 
-- Por ese motivo se pensó en utilizar flexbox para organizar nuestro diseño, primero en contenedores y luego en partes más individuales, siendo flexbox la que nos permite, de manera sencilla, centrar elementos, manejar su distribución, dirección, espaciado y distribución a medida que el tamaño de la pantalla varía.
+- Por ese motivo se pensó en utilizar *flexbox* para organizar nuestro diseño, primero en contenedores y luego en partes más individuales, siendo *flexbox* la que nos permite, de manera sencilla, centrar elementos, manejar su distribución, dirección, espaciado y distribución a medida que el tamaño de la pantalla varía.
 
 - Se respetaron los líneamientos de diseño indicados en Figma, con respecto a margenes, padding, gap, tipo de fuente, colores y tamaño de fuente.
 
