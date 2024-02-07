@@ -1,7 +1,8 @@
-# Challenge 01 - Desencriptador 📝
+# Challenge 01 - Decodificador de Texto con JavaScript 📝
 
 Reto del Bootcamp Alura ONE - G6 2024
-- Desarrollado por **[Walker Alfaro Trelles](http://walkeralfaro.com) - Lima/Perú**
+- Desarrollado por [Walker Alfaro Trelles](http://walkeralfaro.com) - Lima/Perú
+- Link aplicación: [Decodificador](https://walkeralfaro.github.io/alura-challenge-decryptor/)
 
 ## Reto
 
