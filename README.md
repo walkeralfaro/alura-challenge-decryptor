@@ -4,6 +4,15 @@ Reto del Bootcamp Alura ONE - G6 2024
 - Desarrollado por [Walker Alfaro Trelles](http://walkeralfaro.com) - Lima/Perú
 - Link aplicación: [Decodificador](https://walkeralfaro.github.io/alura-challenge-decryptor/)
 
+## Check List
+
+- [x] Filtra solo letras en minúsculas
+- [x] Encripta texto
+- [x] Desencripta texto encriptado
+- [x] Es responsive
+- [x] Tiene botón de copiar texto
+- [x] Tiene footer personalizado
+
 ## Reto
 
 Las "llaves" de encriptación que utilizaremos son las siguientes:
